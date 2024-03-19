@@ -4,7 +4,6 @@ import {defineProps} from "vue";
 const props = defineProps({
     nome: {
         type: String,
-        default: '???',
     },
     xp: {
         type: [String, Number],
@@ -16,7 +15,6 @@ const props = defineProps({
     },
     img: {
         type: String,
-        default: "https://raw.githubusercontent.com/Jair549/pokevite/a16160030cfc682abb4c7c34843e151acfd5e210/src/assets/egg_pokemon.svg"
     },
     loading: {
         type: Boolean
@@ -30,9 +28,9 @@ const props = defineProps({
     class="card card-selected"
     :class=" loading ? '' : 'animate__animated animate__flipInX' "
     >
-    <img height="250" :src="props.img" class="card-img-top pt-2" alt="...">
+    <img height="250" :src="props.img ? 'https://raw.githubusercontent.com/Jair549/pokevite/a16160030cfc682abb4c7c34843e151acfd5e210/src/assets/egg_pokemon.svg' "class="card-img-top pt-2" alt="...">
     <div class="card-body">
-        <h5 class="card-title text-center">{{ props.nome }}</h5>
+        <h5 class="card-title text-center">{{ props.nome ? '???' }}</h5>
         <hr/>
         <div class="row">
             <div class="col-md-6">
