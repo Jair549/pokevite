@@ -45,13 +45,13 @@ const selectedPokemon = async (pokemon) => {
     <div class="container">
         <div class="row pt-4 pb-5">
             <div class="col-sm-12 col-md-6">
-                // <CardSelected
-                //     :nome="selectPokemon?.name"
-                //     :xp="selectPokemon?.base_experience"
-                //     :height="selectPokemon?.height"
-                //     :img="selectPokemon?.sprites?.other?.dream_world?.front_default"
-                //     :loading="loading"
-                // />
+                <CardSelected
+                    :nome="selectPokemon?.name"
+                    :xp="selectPokemon?.base_experience"
+                    :height="selectPokemon?.height"
+                    :img="selectPokemon?.sprites?.other?.dream_world?.front_default"
+                    :loading="loading"
+                />
             </div>
             <div class="col-sm-12 col-md-6">
                 <div class="card card-list">
