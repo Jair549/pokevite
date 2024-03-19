@@ -16,7 +16,7 @@ const props = defineProps({
     },
     img: {
         type: String,
-        default: "src/assets/egg_pokemon.svg"
+        default: "https://raw.githubusercontent.com/Jair549/pokevite/a16160030cfc682abb4c7c34843e151acfd5e210/src/assets/egg_pokemon.svg"
     },
     loading: {
         type: Boolean
