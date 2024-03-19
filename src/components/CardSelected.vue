@@ -1,25 +1,7 @@
 <script setup>
 import {defineProps} from "vue";
 
-const props = defineProps({
-    nome: {
-        type: String,
-    },
-    xp: {
-        type: [String, Number],
-        default: ""
-    },
-    height: {
-        type: [String, Number],
-        default: ""
-    },
-    img: {
-        type: String,
-    },
-    loading: {
-        type: Boolean
-    }
-});
+const props = defineProps(['nome', 'xp', 'height', 'img', 'loading']);
 </script>
 
 <template>
