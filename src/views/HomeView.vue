@@ -37,6 +37,7 @@ const selectedPokemon = async (pokemon) => {
     .catch(err => alert(err))
     .finally(() => loading.value = false)
 
+    console.log("passou aqui", selectPokemon.value);
     return selectPokemon.value;
 }
 
