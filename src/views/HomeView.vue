@@ -49,7 +49,7 @@ const selectedPokemon = async (pokemon) => {
                     :nome="selectPokemon?.name"
                     :xp="selectPokemon?.base_experience"
                     :height="selectPokemon?.height"
-                    :img="selectPokemon?.sprites.other.dream_world.front_default"
+                    :img="selectPokemon?.sprites?.other?.dream_world?.front_default"
                     :loading="loading"
                 />
             </div>
